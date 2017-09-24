@@ -4,14 +4,14 @@
 
 #import <AppKit/AppKit.h>
 #import "IDEEditorArea+MVL.h"
-#import "NSObject+Swizzle.h"
 #import "MVL.h"
+#import "MVL-Swift.h"
 
 @implementation IDEEditorArea (MVL)
 + (void)mvl_hook
 {
     if (self == [IDEEditorArea class]) {
-        [self mvl_swizzleInstanceMethod:@selector(_setEditorModeViewControllerWithPrimaryEditorContext:) with:@selector(mvl__setEditorModeViewControllerWithPrimaryEditorContext:)];
+        [self swizzleInstanceMethod:@selector(_setEditorModeViewControllerWithPrimaryEditorContext:) with:@selector(mvl__setEditorModeViewControllerWithPrimaryEditorContext:)];
     }
 }
 

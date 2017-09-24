@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		A22D80811F77E83A0034CF0B /* MVL.xcplugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = A2A640EA1F77E10F008DA08B /* MVL.xcplugin */; };
+		A2897DAB1F77FA1D0093074A /* Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2897DAA1F77FA1D0093074A /* Swizzle.swift */; };
 		A2A6411B1F77E247008DA08B /* MVLProcessRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A641011F77E247008DA08B /* MVLProcessRunner.m */; };
 		A2A6411C1F77E247008DA08B /* MVLStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A641031F77E247008DA08B /* MVLStringUtil.m */; };
 		A2A6411D1F77E247008DA08B /* MVLTaskRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A641051F77E247008DA08B /* MVLTaskRunner.m */; };
 		A2A6411F1F77E247008DA08B /* _TtC12SourceEditor16SourceEditorView+MVL.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A6410F1F77E247008DA08B /* _TtC12SourceEditor16SourceEditorView+MVL.m */; };
 		A2A641201F77E247008DA08B /* MVL.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A641101F77E247008DA08B /* MVL.m */; };
 		A2A641211F77E247008DA08B /* IDEEditorArea+MVL.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A641121F77E247008DA08B /* IDEEditorArea+MVL.m */; };
-		A2A641241F77E247008DA08B /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A641191F77E247008DA08B /* NSObject+Swizzle.m */; };
 		A2A641311F77E61C008DA08B /* SourceEditor in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A641301F77E61C008DA08B /* SourceEditor */; };
 		A2A641331F77E6A9008DA08B /* IDEKit in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A641321F77E6A9008DA08B /* IDEKit */; };
 		A2A641351F77E6C9008DA08B /* IDEFoundation in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A641341F77E6C8008DA08B /* IDEFoundation */; };
@@ -35,6 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A2897DA91F77FA1C0093074A /* MVL-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MVL-Bridging-Header.h"; sourceTree = "<group>"; };
+		A2897DAA1F77FA1D0093074A /* Swizzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swizzle.swift; sourceTree = "<group>"; };
 		A2A640EA1F77E10F008DA08B /* MVL.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVL.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A640ED1F77E10F008DA08B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2A641001F77E247008DA08B /* MVLProcessRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVLProcessRunner.h; sourceTree = "<group>"; };
@@ -53,8 +55,6 @@
 		A2A641101F77E247008DA08B /* MVL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVL.m; sourceTree = "<group>"; };
 		A2A641111F77E247008DA08B /* MVL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVL.h; sourceTree = "<group>"; };
 		A2A641121F77E247008DA08B /* IDEEditorArea+MVL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEEditorArea+MVL.m"; sourceTree = "<group>"; };
-		A2A641181F77E247008DA08B /* NSObject+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzle.h"; sourceTree = "<group>"; };
-		A2A641191F77E247008DA08B /* NSObject+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzle.m"; sourceTree = "<group>"; };
 		A2A6411A1F77E247008DA08B /* IDEEditorArea+MVL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEEditorArea+MVL.h"; sourceTree = "<group>"; };
 		A2A641301F77E61C008DA08B /* SourceEditor */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = SourceEditor; path = ../../Applications/Xcode.app/Contents/SharedFrameworks/SourceEditor.framework/Versions/A/SourceEditor; sourceTree = "<group>"; };
 		A2A641321F77E6A9008DA08B /* IDEKit */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = IDEKit; path = ../../Applications/Xcode.app/Contents/Frameworks/IDEKit.framework/Versions/A/IDEKit; sourceTree = "<group>"; };
@@ -110,9 +110,9 @@
 				A2A641031F77E247008DA08B /* MVLStringUtil.m */,
 				A2A641041F77E247008DA08B /* MVLTaskRunner.h */,
 				A2A641051F77E247008DA08B /* MVLTaskRunner.m */,
-				A2A641181F77E247008DA08B /* NSObject+Swizzle.h */,
-				A2A641191F77E247008DA08B /* NSObject+Swizzle.m */,
 				A2A641061F77E247008DA08B /* Xcode */,
+				A2897DAA1F77FA1D0093074A /* Swizzle.swift */,
+				A2897DA91F77FA1C0093074A /* MVL-Bridging-Header.h */,
 			);
 			path = MVL;
 			sourceTree = "<group>";
@@ -172,6 +172,7 @@
 				TargetAttributes = {
 					A2A640E91F77E10F008DA08B = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -208,10 +209,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2897DAB1F77FA1D0093074A /* Swizzle.swift in Sources */,
 				A2A6411F1F77E247008DA08B /* _TtC12SourceEditor16SourceEditorView+MVL.m in Sources */,
 				A2A641201F77E247008DA08B /* MVL.m in Sources */,
 				A2A6411C1F77E247008DA08B /* MVLStringUtil.m in Sources */,
-				A2A641241F77E247008DA08B /* NSObject+Swizzle.m in Sources */,
 				A2A6411D1F77E247008DA08B /* MVLTaskRunner.m in Sources */,
 				A2A641211F77E247008DA08B /* IDEEditorArea+MVL.m in Sources */,
 				A2A6411B1F77E247008DA08B /* MVLProcessRunner.m in Sources */,
@@ -327,13 +328,21 @@
 		A2A640F11F77E10F008DA08B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
 				INFOPLIST_FILE = MVL/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pebble8888.MVL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MVL/MVL-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Debug;
@@ -341,13 +350,20 @@
 		A2A640F21F77E10F008DA08B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
 				INFOPLIST_FILE = MVL/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pebble8888.MVL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MVL/MVL-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Release;

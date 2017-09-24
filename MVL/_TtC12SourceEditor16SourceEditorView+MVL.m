@@ -6,12 +6,12 @@
 #import "MVL.h"
 #import "MVLTaskRunner.h"
 #import "MVLStringUtil.h"
-#import "NSObject+Swizzle.h"
+#import "MVL-Swift.h"
 
 @implementation _TtC12SourceEditor16SourceEditorView (MVL)
 + (void)mvl_initialize{
-    [self mvl_swizzleInstanceMethod:@selector(selectedRange) with:@selector(mvl_selectedRange)];
-    [self mvl_swizzleInstanceMethod:@selector(keyDown:) with:@selector(mvl_keyDown:)];
+    [self swizzleInstanceMethod:@selector(selectedRange) with:@selector(mvl_selectedRange)];
+    [self swizzleInstanceMethod:@selector(keyDown:) with:@selector(mvl_keyDown:)];
 }
 
 - (struct _NSRange)mvl_selectedRange{
