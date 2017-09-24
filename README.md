@@ -13,7 +13,7 @@ MacVim Launcher Xcode plugin for Xcode9
 
 - Xcode - Preferences - Key Binding
 
-- Remove default Ctrl + y Key Binding 
+  Remove default Ctrl + y Key Binding 
 
 - install MacVim with `brew install macvim`
 
