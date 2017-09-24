@@ -5,7 +5,7 @@
 #import "MVL.h"
 
 #import "IDEEditorArea+MVL.h"
-#import "_TcC12SourceEditor16SourceEditorView+MVL.h"
+#import "_TtC12SourceEditor16SourceEditorView+MVL.h"
 
 @implementation MVL
 

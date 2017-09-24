@@ -11,7 +11,7 @@
 		A2A6411B1F77E247008DA08B /* MVLProcessRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A641011F77E247008DA08B /* MVLProcessRunner.m */; };
 		A2A6411C1F77E247008DA08B /* MVLStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A641031F77E247008DA08B /* MVLStringUtil.m */; };
 		A2A6411D1F77E247008DA08B /* MVLTaskRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A641051F77E247008DA08B /* MVLTaskRunner.m */; };
-		A2A6411F1F77E247008DA08B /* _TcC12SourceEditor16SourceEditorView+MVL.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A6410F1F77E247008DA08B /* _TcC12SourceEditor16SourceEditorView+MVL.m */; };
+		A2A6411F1F77E247008DA08B /* _TtC12SourceEditor16SourceEditorView+MVL.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A6410F1F77E247008DA08B /* _TtC12SourceEditor16SourceEditorView+MVL.m */; };
 		A2A641201F77E247008DA08B /* MVL.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A641101F77E247008DA08B /* MVL.m */; };
 		A2A641211F77E247008DA08B /* IDEEditorArea+MVL.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A641121F77E247008DA08B /* IDEEditorArea+MVL.m */; };
 		A2A641241F77E247008DA08B /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A641191F77E247008DA08B /* NSObject+Swizzle.m */; };
@@ -48,8 +48,8 @@
 		A2A6410B1F77E247008DA08B /* DVTKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTKit.h; sourceTree = "<group>"; };
 		A2A6410C1F77E247008DA08B /* IDEFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEFoundation.h; sourceTree = "<group>"; };
 		A2A6410D1F77E247008DA08B /* IDEKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEKit.h; sourceTree = "<group>"; };
-		A2A6410E1F77E247008DA08B /* _TcC12SourceEditor16SourceEditorView+MVL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "_TcC12SourceEditor16SourceEditorView+MVL.h"; sourceTree = "<group>"; };
-		A2A6410F1F77E247008DA08B /* _TcC12SourceEditor16SourceEditorView+MVL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "_TcC12SourceEditor16SourceEditorView+MVL.m"; sourceTree = "<group>"; };
+		A2A6410E1F77E247008DA08B /* _TtC12SourceEditor16SourceEditorView+MVL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "_TtC12SourceEditor16SourceEditorView+MVL.h"; sourceTree = "<group>"; };
+		A2A6410F1F77E247008DA08B /* _TtC12SourceEditor16SourceEditorView+MVL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "_TtC12SourceEditor16SourceEditorView+MVL.m"; sourceTree = "<group>"; };
 		A2A641101F77E247008DA08B /* MVL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVL.m; sourceTree = "<group>"; };
 		A2A641111F77E247008DA08B /* MVL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVL.h; sourceTree = "<group>"; };
 		A2A641121F77E247008DA08B /* IDEEditorArea+MVL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEEditorArea+MVL.m"; sourceTree = "<group>"; };
@@ -97,8 +97,8 @@
 		A2A640EC1F77E10F008DA08B /* MVL */ = {
 			isa = PBXGroup;
 			children = (
-				A2A6410E1F77E247008DA08B /* _TcC12SourceEditor16SourceEditorView+MVL.h */,
-				A2A6410F1F77E247008DA08B /* _TcC12SourceEditor16SourceEditorView+MVL.m */,
+				A2A6410E1F77E247008DA08B /* _TtC12SourceEditor16SourceEditorView+MVL.h */,
+				A2A6410F1F77E247008DA08B /* _TtC12SourceEditor16SourceEditorView+MVL.m */,
 				A2A6411A1F77E247008DA08B /* IDEEditorArea+MVL.h */,
 				A2A641121F77E247008DA08B /* IDEEditorArea+MVL.m */,
 				A2A640ED1F77E10F008DA08B /* Info.plist */,
@@ -208,7 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2A6411F1F77E247008DA08B /* _TcC12SourceEditor16SourceEditorView+MVL.m in Sources */,
+				A2A6411F1F77E247008DA08B /* _TtC12SourceEditor16SourceEditorView+MVL.m in Sources */,
 				A2A641201F77E247008DA08B /* MVL.m in Sources */,
 				A2A6411C1F77E247008DA08B /* MVLStringUtil.m in Sources */,
 				A2A641241F77E247008DA08B /* NSObject+Swizzle.m in Sources */,
